@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Coelho | Desenvolvedor Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4D2B8C',
+                        secondary: '#85409D',
+                        accent: '#EEA727',
+                        highlight: '#FFEF5F',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'press-start': ['Press Start 2P', 'monospace'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-montserrat bg-gray-50 text-gray-900">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary tracking-wider">Rafael Coelho</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-accent transition-colors">Início</a>
+                <a href="#projects" class="hover:text-accent transition-colors">Projetos</a>
+                <a href="#about" class="hover:text-accent transition-colors">Sobre</a>
+                <a href="#contact" class="hover:text-accent transition-colors">Contato</a>
+            </div>
+            <button class="md:hidden text-primary">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent px-6">
+        <div class="text-center text-white animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Desenvolvedor Web</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Crio sites e sistemas web modernos, responsivos e com performance excepcional.</p>
+            <a href="#projects" class="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-full hover:bg-highlight hover:text-gray-900 transition-all transform hover:scale-105">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Meus Projetos</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 animate-slide-up">
+                    <div class="h-48 bg-gradient-to-r from-primary to-secondary"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Site Corporativo</h3>
+                        <p class="text-gray-600 mb-4">Landing page moderna com animações e SEO otimizado.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-secondary/10 text-secondary text-sm px-3 py-1 rounded-full">CSS</span>
+                            <span class="bg-accent/10 text-accent text-sm px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-accent font-semibold hover:underline">Ver detalhes →</a>
+                    </div>
+                </div>
+                <!-- Repeat project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Sobre Mim</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700">
+                <p class="mb-6">Sou desenvolvedor web com experiência em criar soluções digitais que unem design e funcionalidade. Meu foco é entregar produtos de alta qualidade, com código limpo e performance otimizada.</p>
+                <p class="mb-6">Trabalho com tecnologias como HTML5, CSS3, JavaScript, Tailwind, React, Node.js e mais. Adoro aprender novas ferramentas e melhorar continuamente minhas habilidades.</p>
+                <p>Quando não estou codando, gosto de contribuir para projetos open-source e escrever sobre tecnologia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Vamos Conversar</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">E-mail</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-secondary transition-colors">Enviar Mensagem</button>
+                </form>
+                <div class="mt-12 text-center">
+                    <p class="text-gray-700 mb-6">Ou entre em contato pelas redes sociais:</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-3xl text-primary hover:text-accent transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-3xl text-primary hover:text-accent transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-3xl text-primary hover:text-accent transition-colors"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="currentYear"></span> Rafael Coelho. Todos os direitos reservados.</p>
+            <p class="mt-2 text-highlight">Desenvolvido com paixão pelo código.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Current year for footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
