@@ -75,10 +75,16 @@
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Meus Projetos</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary inline-flex flex-wrap justify-center items-center gap-3">
+                    Meus Projetos
+                    
+                </h2>
+                
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
                 <!-- Project Card -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 animate-slide-up">
+                <!-- <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 animate-slide-up">
                     <div class="h-48 bg-gradient-to-r from-primary to-secondary"></div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">Site Corporativo</h3>
@@ -90,9 +96,13 @@
                         </div>
                         <a href="#" class="text-accent font-semibold hover:underline">Ver detalhes →</a>
                     </div>
-                </div>
+                </div> -->
                 <!-- Repeat project cards as needed -->
             </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent/20 text-accent animate-pulse-slow">
+                        <span class="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse"></span>
+                        Em construção
+            </span>
         </div>
     </section>
 
@@ -101,9 +111,9 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-primary">Sobre Mim</h2>
             <div class="max-w-3xl mx-auto text-lg text-gray-700">
-                <p class="mb-6">Sou desenvolvedor web com experiência em criar soluções digitais que unem design e funcionalidade. Meu foco é entregar produtos de alta qualidade, com código limpo e performance otimizada.</p>
-                <p class="mb-6">Trabalho com tecnologias como HTML5, CSS3, JavaScript, Tailwind, React, Node.js e mais. Adoro aprender novas ferramentas e melhorar continuamente minhas habilidades.</p>
-                <p>Quando não estou codando, gosto de contribuir para projetos open-source e escrever sobre tecnologia.</p>
+                <p class="mb-6">Sou desenvolvedor web com experiência profissional em projetos reais, atuando principalmente no desenvolvimento de interfaces e aplicações web. Tenho foco em escrever código organizado, sustentável e em entregar soluções funcionais que resolvem problemas concretos.</p>
+                <p class="mb-6">Trabalho com tecnologias como HTML, CSS, JavaScript, React e frameworks modernos do ecossistema front-end, além de já ter atuado em projetos full stack no mercado. Estou em constante aprendizado, buscando evoluir tecnicamente e acompanhar boas práticas da área.</p>
+                <p>Fora do trabalho, tenho interesse em tecnologia, escalada e em desenvolver projetos que me ajudem a crescer como profissional.</p>
             </div>
         </div>
     </section>
@@ -113,18 +123,19 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-primary">Vamos Conversar</h2>
             <div class="max-w-2xl mx-auto">
-                <form class="space-y-6">
+                <form class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="679dac48-895e-42d0-a3b6-b3899c61b024">
                     <div>
                         <label for="name" class="block text-gray-700 mb-2">Nome</label>
-                        <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required>
+                        <input type="text" name="name" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required>
                     </div>
                     <div>
                         <label for="email" class="block text-gray-700 mb-2">E-mail</label>
-                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required>
+                        <input type="email" name="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required>
                     </div>
                     <div>
                         <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
-                        <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required></textarea>
+                        <textarea name="message" id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition" required></textarea>
                     </div>
                     <button type="submit" class="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-secondary transition-colors">Enviar Mensagem</button>
                 </form>
