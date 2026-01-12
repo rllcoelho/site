@@ -40,15 +40,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission (placeholder)
-const contactForm = document.querySelector('form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Obrigado pela mensagem! Em breve entrarei em contato.');
-        contactForm.reset();
-    });
-}
 
 // Add hover effect to project cards
 const projectCards = document.querySelectorAll('.bg-white.rounded-xl');
